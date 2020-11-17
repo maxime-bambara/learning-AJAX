@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>hour</title>
+</head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row no-gutters justify-content-between">
+        <div class="col-3">
+          <form>
+            <div class="form-group">
+              <label for="firstName">Nom</label>
+              <input type="text" name="firstName" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Prénom</label>
+              <input type="text" name="lastName" class="form-control" id="lastName">
+            </div>
+            <div class="form-group">
+              <label for="grade">Classe</label>
+              <input type="number" name="grade" class="form-control" id="grade">
+            </div>
+            <div class="form-group">
+              <label for="numberClass">Classe</label>
+              <input type="number" name="numberClass" class="form-control" id="numberClass">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="sendForm(firstName.value, lastName.value, grade.value, numberClass.value)">Enregistrer</button>
+          </form>
+        </div>
+        <div class="col-8">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr>
+                <th>Identifiant</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Classe</th>
+                <th>Numero de classe</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
